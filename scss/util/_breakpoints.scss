@@ -1,0 +1,29 @@
+@use 'functions' as func;
+
+// Break points of 700px, 900px, 1440px or various devices of min-width,
+$breakpoints-up: (
+    'medium' : func.em(500),
+    'large' : func.em(700),
+    'xlarge': func.em(1000),
+    'xxlarge': func.em(1440), 
+);
+
+// Break points of 699.98px, 899.98px, 1339.98px or various devices of max-width,
+$breakpoints-down: (
+    'medium' : func.em(499.98),
+    'large' : func.em(699.98),
+    'xlarge': func.em(999.98),
+    'xxlarge': func.em(1339.98px), 
+);
+
+@mixin breakpoint-up($size){
+    @media (min-width: map-get($breakpoints-up, $size)){
+        @content
+    }
+};
+
+@mixin breakpoint-down($size){
+    @media (max-width: map-get($breakpoints-down, $size)){
+        @content
+    }
+};

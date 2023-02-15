@@ -1,0 +1,27 @@
+@use "../util" as u;
+
+.title_container {
+    width: 100%;
+    height: 100%;
+    margin: u.rem(20) u.rem(15);
+}
+
+.div_container {
+    width: 90%;
+    height: 100%;
+    background-color: var(--text-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.title {
+    color: var(--main-color);
+    font-weight: 700;
+    margin-top: u.rem(8);
+}
+
+.text {
+    color: var(--main-dark-color);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
