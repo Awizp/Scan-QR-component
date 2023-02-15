@@ -18,3 +18,6 @@ Then I used SASS compiler for compiling my style components and was creating CSS
 3. SCSS
 
 All feedback is greatly appreciated!
+
+# Visit the site,
+https://awizp.github.io/scan-qrcode-profile/
